@@ -1,0 +1,25 @@
+<idea-plugin>
+  <id>org.example.regexpreviewer</id>
+  <name>Regex Previewer</name>
+  <version>1.0</version>
+  <vendor email="you@example.com">Your Name</vendor>
+
+  <description>
+    A simple tool window to test and preview regular expressions live.
+  </description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow
+            id="Regex Previewer"
+            anchor="bottom"
+            factoryClass="org.example.a.RegexTool.RegexToolWindowFactory"
+    />
+    <toolWindow
+            id="Mock API Mocker"
+            anchor="bottom"
+            factoryClass="org.example.MockApiToolWindowFactory"
+    />
+  </extensions>
+</idea-plugin>
